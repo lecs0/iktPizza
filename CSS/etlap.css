@@ -1,0 +1,34 @@
+body{
+    background: #FFF8EC;
+}
+
+h1{
+    font-family:'Copperplate Gothic Light';
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+.card {
+ width: 300px;
+ height: 420px;
+ border-radius: 30px;
+ background: #FF8A00;
+ box-shadow: 15px 15px 30px rgb(73, 73, 73),
+             -15px -15px 30px rgb(60, 60, 60);
+}
+
+#p-nev{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#p-leiras{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+}
