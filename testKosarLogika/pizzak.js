@@ -6,5 +6,10 @@ function kosarba(id) {
 
 function rendeles() {
     console.log(kosar);
-    localStorage.setItem('kosar', JSON.stringify(kosar));
+
+    const parameterek = new URLSearchParams({
+        kosar: JSON.stringify(kosar)
+    });
+
+    window.location.href = "kosar.html?" + parameterek.toString();
 }
