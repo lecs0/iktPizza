@@ -8,7 +8,7 @@
   background: #29292c;
   border-radius: 1rem;
   overflow: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
   font-size: 16px;
   --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
   --color: #32a6ff
@@ -134,43 +134,134 @@
   }
 }
 
-.navbar {
-    width: 100%;
-    height: 35px;
-    padding: 0 26px;
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+    }
 
-    background-color: #ffffff;
-    border-bottom: 1px solid #eeeeee;
-}
+    .navbar {
+      width: 100%;
+      height: 56px;
+      background: #fff;
+      border: 1px solid #d5d5d5;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 4.1%;
+    }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    /* Logó */
+    .etterem-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #111;
+      white-space: nowrap;
+    }
 
-    text-decoration: none;
-    color: #111111;
-}
+    .logo-icon {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: bold;
+    }
 
-.logo-icon {
-    width: 16px;
-    height: 16px;
+    .logo-nev {
+      font-size: 9px;
+      font-weight: 700;
+    }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-weight: bold;
+    }
 
-    border: 1px solid #111111;
-    font-size: 8px;
-    font-weight: bold;
-}
+    .nav-links a {
+      color: #000;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 400;
+      transition: color 0.2s ease;
+      font-weight: bold;
+    }
 
-.logo-text {
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: 0.2px;
-}
+    .nav-links a:hover {
+      color: #000;
+      font-weight: bold;
+    }
+
+    
+    .cart-button {
+      background: #fff;
+      border: 1px solid #333;
+      border-radius: 2px;
+      padding: 6px 13px;
+      font-size: 8px;
+      color: #111;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .cart-button:hover {
+      background: #111;
+      color: #fff;
+    }
+
+    
+    @media (max-width: 600px) {
+      .navbar {
+        padding: 0 12px;
+      }
+
+      .nav-links {
+        gap: 10px;
+      }
+
+      .nav-links a {
+        font-size: 10px;
+      }
+
+      .logo {
+        gap: 5px;
+      }
+
+      .logo-name {
+        font-size: 8px;
+      }
+
+      .cart-button {
+        padding: 6px 8px;
+      }
+    }
+
+    .uzenet {
+      width: 100%;
+      height: 200px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+
+    .uzenet-class {
+      font-size: 14px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
