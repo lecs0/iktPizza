@@ -14,8 +14,8 @@ h1{
  height: 420px;
  border-radius: 30px;
  background: #FF8A00;
- box-shadow: 15px 15px 30px rgb(73, 73, 73),
-             -15px -15px 30px rgb(60, 60, 60);
+ box-shadow: 5px 5px 15px rgb(158, 95, 0),
+             -5px -5px 15px rgb(158, 95, 0);
 }
 
 #p-nev{
@@ -46,6 +46,7 @@ h1{
     background-color: #ffffff;
     border-bottom: 1px solid #eeeeee;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -69,7 +70,55 @@ h1{
 }
 
 .logo-text {
-    font-size: 9px;
+    font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.2px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: #777777;
+    font-size: 15px;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #111111;
+}
+
+.cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20px;
+    padding: 0 12px;
+
+    border: 1px solid #111111;
+    color: #111111;
+
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+}
+
+.cart-button:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
