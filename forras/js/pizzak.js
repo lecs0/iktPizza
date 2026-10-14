@@ -11,5 +11,5 @@ function rendeles() {
         kosar: JSON.stringify(kosar)
     });
 
-    window.location.href = "kosar.html?" + parameterek.toString();
+    window.location.href = "../oldalak/kosar.html?" + parameterek.toString();
 }
