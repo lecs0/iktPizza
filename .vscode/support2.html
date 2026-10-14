@@ -57,14 +57,38 @@
     </div>
   </div>
 
+
+
+  
 </main>
 
-<p class="uzenet-class">További kérdésekért kérjük ide írj üzenetet:</p>
-              <textarea class="uzenet"
-                name="uzenet"
-                placeholder="Üzeneted"
-                required
-              ></textarea>
+
+<form class="kapcsolat-form">
+    <div class="adatok">
+        <label for="keresztnev">Keresztnév *</label>
+        <input id="keresztnev" type="text" placeholder="pl. János">
+
+        <label for="csaladnev">Családnév *</label>
+        <input id="csaladnev" type="text" placeholder="pl. Kovács">
+
+        <label for="email">Email cím *</label>
+        <input id="email" type="email" placeholder="pl. kovacs.janos@example.com">
+
+        <label for="telefon">Telefonszám *</label>
+        <input id="telefon" type="tel" placeholder="pl. +36 30 123 456">
+    </div>
+
+    <div class="uzenet">
+        <label for="uzeneted">
+            További kérdésekért kérjük, ide írj üzenetet:
+        </label>
+        <textarea id="uzeneted" placeholder="Üzeneted"></textarea>
+    </div>
+
+    <button type="submit">Küldés</button>
+</form>
+
+
 
 </body>
 </html>
