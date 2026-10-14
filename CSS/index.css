@@ -139,3 +139,9 @@ h1{
     font-size: 15px;
     font-family:'Times New Roman', Times, serif;
 }
+
+.etlap-gomb a,
+.support-gomb a{
+    color: inherit;
+    text-decoration: none;
+}
