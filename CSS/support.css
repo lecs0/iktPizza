@@ -1,6 +1,4 @@
-body{
-    background: #FFF8EC;
-}
+
 
 .notification {
   display: flex;
@@ -111,7 +109,7 @@ body{
   flex-wrap: wrap;
   gap: 24px;
   padding: 60px 24px;
-  background: #fff;
+  background: #FFF8EC;
   min-height: 300px;
 }
 
@@ -137,7 +135,7 @@ body{
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #fff;
+      background: #FFF8EC;
     }
 
     .navbar {
@@ -217,7 +215,7 @@ body{
     }
 
 
-.kapcsolat-form {
+.kapcsolat {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
@@ -250,26 +248,17 @@ body{
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-family: inherit;
+    font-family:'Times New Roman', Times, serif;
     resize: vertical;
 }
 
-.kapcsolat-form button {
-    grid-column: 1 / -1;
-    justify-self: start;
-    padding: 10px 25px;
-    cursor: pointer;
+.kapcsolat button {
+  margin:left;
+  width: 100px;
+  padding: 10px 5px;
 }
 
-@media (max-width: 600px) {
-    .kapcsolat-form {
-        grid-template-columns: 1fr;
-    }
 
-    .kapcsolat-form button {
-        grid-column: 1;
-    }
-}
 
 label {
 font-weight: bold;
