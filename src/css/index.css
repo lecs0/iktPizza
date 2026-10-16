@@ -145,3 +145,24 @@ h1{
     color: inherit;
     text-decoration: none;
 }
+
+.homepage-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.leiras-szoveg{
+    width: 400px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #6B6760;
+    margin-bottom: 5px;
+
+}
+
+.leiras-cim{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 70px;
+    color: black;
+}
