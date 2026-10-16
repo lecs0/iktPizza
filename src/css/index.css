@@ -83,11 +83,6 @@ body{
     color: #ffffff;
 }
 
-#pizza-kep{
-    float: right;
-    width: 800px;
-    height: 500px;
-}
 
 h1{
     font-size: 100px;
@@ -95,10 +90,8 @@ h1{
 
 .leiras{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin: 150px 50px 0;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .leiras img{
@@ -146,7 +139,7 @@ h1{
 
 .leiras-szoveg{
     width: 400px;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #6B6760;
     margin-bottom: 5px;
@@ -154,7 +147,17 @@ h1{
 }
 
 .leiras-cim{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 70px;
     color: black;
+    margin-bottom: 20px;
+}
+
+.pizza-image{
+    height: 150px;
+    width: 150px;
+    float: right;
+    display: flex;
+    align-items: center;
+
 }
