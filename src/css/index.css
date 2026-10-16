@@ -24,23 +24,15 @@ body{
 .logo {
     display: flex;
     align-items: center;
-    gap: 5px;
 
     text-decoration: none;
     color: #111111;
 }
 
 .logo-icon {
-    width: 16px;
-    height: 16px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border: 1px solid #111111;
-    font-size: 8px;
-    font-weight: bold;
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
 }
 
 .logo-text {

@@ -162,9 +162,11 @@ body{
     }
 
     .logo-icon {
-      width: 20px;
-      height: 20px;
-      border: 1px solid #333;
+      width: 30px;
+      height: 26px;
+      background: #111;
+      border-left: 4px solid #ff8a00;
+      color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -172,17 +174,18 @@ body{
       font-weight: bold;
     }
 
-    .logo-nev {
-      font-size: 9px;
-      font-weight: 700;
-    }
-
-    
-    .nav-links {
+    .logo {
       display: flex;
       align-items: center;
-      gap: 22px;
-      font-weight: bold;
+      text-decoration: none;
+      color: #111;
+      white-space: nowrap;
+    }
+
+    .logo-nev {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
     }
 
     .nav-links a {
