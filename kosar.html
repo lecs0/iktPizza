@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/kosar.css">
+    <link rel="stylesheet" href="src/css/kosar.css">
     <title>Kosár</title>
     <script>
         const eredetiGetElementById = Document.prototype.getElementById;
@@ -12,7 +12,7 @@
             return eredetiGetElementById.call(this, id === "" ? "kosarCont" : id);
         };
     </script>
-    <script src="../forras/js/kosar.js" defer></script>
+    <script src="src/js/kosar.js" defer></script>
 </head>
 
 <body>
