@@ -9,14 +9,29 @@ h1{
     margin-top: 20px;
 }
 
-.card {
- width: 300px;
- height: 420px;
- border-radius: 30px;
- background: #FF8A00;
- box-shadow: 5px 5px 15px rgb(158, 95, 0),
+.card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    border-radius: 30px;
+    margin: 30px;
+    background: #6B6760;
+    box-shadow: 5px 5px 15px rgb(158, 95, 0),
              -5px -5px 15px rgb(158, 95, 0);
+
 }
+
+.btn-kosar{
+    width: 150px;
+    height: 65px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+
+}
+
 
 #p-nev{
     font-size: 30px;
@@ -24,6 +39,7 @@ h1{
     color: #fff;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Copperplate Gothic Light';
 }
 
 #p-leiras{
@@ -31,6 +47,8 @@ h1{
     color: #fff;
     text-align: center;
     margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    
 }
 
 
