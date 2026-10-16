@@ -1,23 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script>
-        const kosar = [];
-
-        function kosarba(id) {
-            kosar.push(Number(id));
-        }
-
-        function rendeles() {
-            const params = new URLSearchParams({
-                kosar: JSON.stringify(kosar)
-            });
-            window.location.href = `kosar.html?${params.toString()}`;
-        }
-    </script>
+    <title>Pizzák</title>
+    <script src="src/js/pizzak.js" defer></script>
 </head>
 <body>
     <button type="button" onclick="rendeles()">Rendelés</button>
