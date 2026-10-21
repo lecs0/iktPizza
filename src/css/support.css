@@ -137,86 +137,6 @@
       background: #FFF8EC;
     }
 
-    .navbar {
-      width: 100%;
-      height: 56px;
-      background: #fff;
-      border: 1px solid #d5d5d5;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 4.1%;
-    }
-
-    /* Logó */
-    .etterem-logo {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      text-decoration: none;
-      color: #111;
-      white-space: nowrap;
-    }
-
-    .logo-icon {
-      width: 30px;
-      height: 26px;
-      background: #111;
-      border-left: 4px solid #ff8a00;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 9px;
-      font-weight: bold;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #111;
-      white-space: nowrap;
-    }
-
-    .logo-nev {
-      width: 42px;
-      height: 42px;
-      object-fit: contain;
-    }
-
-    .nav-links a {
-      color: #000;
-      text-decoration: none;
-      font-size: 12px;
-      font-weight: 400;
-      transition: color 0.2s ease;
-      font-weight: bold;
-    }
-
-    .nav-links a:hover {
-      color: #000;
-      font-weight: bold;
-    }
-
-    
-    .cart-button {
-      background: #fff;
-      border: 1px solid #333;
-      border-radius: 2px;
-      padding: 6px 13px;
-      font-size: 8px;
-      color: #111;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-
-    .cart-button:hover {
-      background: #111;
-      color: #fff;
-    }
-
-
 .kapcsolat {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -265,4 +185,3 @@
 label {
 font-weight: bold;
 }
-

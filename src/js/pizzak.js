@@ -13,3 +13,5 @@ function rendeles() {
 
     window.location.href = "kosar.html?" + parameterek.toString();
 }
+
+

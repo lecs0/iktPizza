@@ -48,6 +48,23 @@ const kuponok = [
 
 ];
 
+
+
+function vissza() {
+    const kosar = kosarPizzak.flatMap(pizza =>
+        Array(pizza.db).fill(pizza.id)
+    );
+
+    const parameterek = new URLSearchParams({
+        kosar: JSON.stringify(kosar)
+    });
+
+    window.location.href = `etlap.html?${parameterek.toString()}`;
+}
+
+
+
+
 let oszAr = 0;
 let alkalmazottKupon = null;
 const kosarPizzak = [];

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/kosar.css">
+    <link rel="stylesheet" href="src/css/kozos.css">
     <title>Kosár</title>
     <script>
         const eredetiGetElementById = Document.prototype.getElementById;
@@ -28,6 +29,10 @@
             <li><a href="etlap.html">Étlap</a></li>
             <li><a href="support.html">Support</a></li>
         </ul>
+
+        <a class="cart-button back-button" href="etlap.html" onclick="vissza(); return false;">
+            Vissza az étlapra
+        </a>
 
     </nav>
 
@@ -89,6 +94,10 @@
             <p class="checkout-message" id="checkoutUzenet" role="status" aria-live="polite"></p>
         </div>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Leña Rossa. Minden jog fenntartva.</p>
+    </footer>
 
 </body>
 
