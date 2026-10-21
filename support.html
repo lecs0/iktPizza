@@ -3,22 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/support.css">
+    <link rel="stylesheet" href="supprt2.css">
     <title>Support</title>
 </head>
 <body>
-    <nav class="navbar">
-        <!-- Logó -->
-        <a href="#" class="logo">
-            <img src="src/img/logo.png" alt="Logo" class="logo-icon">
-        </a>
 
-        <ul class="nav-links">
-            <li><a href="index.html">Főoldal</a></li>
-            <li><a href="etlap.html">Étlap</a></li>
-            <li><a href="support.html">Support</a></li>
-        </ul>
+  <header class="navbar">
 
+    <a href="#" class="etterem-logo">
+      <span class="logo-icon">LG</span>
+      <span class="logo-nnev">LEÑA ROSSA</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#fooldal">Főoldal</a>
+      <a href="#etlap">Étlap</a>
+      <a href="#support">Support</a>
     </nav>
+
+    <button class="cart-button" type="button">
+      KOSÁR
+    </button>
+
+  </header>
+
+  <main class="cards-container">
+
+  <div class="notification">
+    <div class="notiglow"></div>
+    <div class="notiborderglow"></div>
+
+    <div class="notititle">Hol található az étterem?</div>
+    <div class="notibody">Baja Petőfi Sándor u. 3 6500
+      
+    </div>
+  </div>
+
+  <div class="notification">
+    <div class="notiglow"></div>
+    <div class="notiborderglow"></div>
+
+    <div class="notititle">Van-e házhozszállítás?</div>
+    <div class="notibody">Igen van, 10km-en belüli településekre van házhozszállítás.
+    </div>
+  </div>
+
+  <div class="notification">
+    <div class="notiglow"></div>
+    <div class="notiborderglow"></div>
+
+    <div class="notititle">Milyen fizetési módokat fogadunk el?</div>
+    <div class="notibody">Készpénz, Kártya, Szépkártya.
+    </div>
+  </div>
+
+
+
+  
+</main>
+
+
+<form class="kapcsolat">
+    <div class="adatok">
+        <label for="keresztnev">Keresztnév:</label>
+        <input id="keresztnev"  placeholder="pl. János">
+
+        <label for="csaladnev">Családnév:</label>
+        <input id="csaladnev"  placeholder="pl. Kovács">
+
+        <label for="email">Email cím:</label>
+        <input id="email"  placeholder="pl. kovacs.janos@dolog.com">
+
+        <label for="telefon">Telefonszám:</label>
+        <input id="telefon"  placeholder="pl. +36 30 123 456">
+    </div>
+
+    <div class="uzenet">
+        <label for="uzeneted">
+            További kérdésekért kérjük, ide írj üzenetet:
+        </label>
+        <textarea id="uzeneted" placeholder="Üzeneted"></textarea>
+    </div>
+
+    <button type="submit">Küldés</button>
+</form>
+
 </body>
+</html>
 </html>
