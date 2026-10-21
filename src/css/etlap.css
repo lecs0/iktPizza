@@ -9,6 +9,10 @@ h1{
     margin-top: 20px;
 }
 
+.container-fluid > .row {
+  justify-content: center;
+}
+
 .pizza-card,
 .pizza-card * {
   box-sizing: border-box;
