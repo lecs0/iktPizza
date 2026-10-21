@@ -9,46 +9,87 @@ h1{
     margin-top: 20px;
 }
 
-.card{
-    position: relative;
-    width: 300px;
-    height: 420px;
-    border-radius: 30px;
-    margin: 30px;
-    background: #6B6760;
-    box-shadow: 5px 5px 15px rgb(158, 95, 0),
-             -5px -5px 15px rgb(158, 95, 0);
-
+.pizza-card,
+.pizza-card * {
+  box-sizing: border-box;
 }
 
-.btn-kosar{
-    width: 150px;
-    height: 65px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-
+.pizza-card {
+  width: 100%;
+  max-width: 280px;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  color: #25231f;
+  border: 1px solid #ded3c3;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  margin: 20px;
 }
 
-
-#p-nev{
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Copperplate Gothic Light';
+.pizza-card__image {
+  position: relative;
+  aspect-ratio: 31 / 21;
 }
 
-#p-leiras{
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    margin-top: 10px;
-    font-family:'Times New Roman', Times, serif;
-    
+.pizza-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pizza-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.pizza-nev {
+  margin: 0;
+  font-family: "Lora", Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.pizza-leiras {
+  margin: 0;
+  min-height: 60px;
+  color: #6b6760;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.pizza-ar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.pizza-card_price{
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.pizza-gomb{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #ff8a00;
+  color: #25231f;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 
