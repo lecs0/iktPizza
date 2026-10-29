@@ -1,36 +1,27 @@
 const pizzak = [
-    {   
-        "id": 1,
-        "nev": "Margherita",
-        "ar": 1000,
-        "db": 1
-    },
-    {
-        "id": 2,
-        "nev": "Marinara",
-        "ar": 1200,
-        "db": 1
-    },
-    {
-        "id": 3,
-        "nev": "Quattro Stagioni",
-        "ar": 1500,
-        "db": 1
-    },
-    {
-        "id": 4,
-        "nev": "Quattro Formaggi",
-        "ar": 1600,
-        "db": 1
-    },
-    {
-        "id": 5,
-        "nev": "Capricciosa",
-        "ar": 1700,
-        "db": 1
-    }
+    { id: 1, nev: "Margaréta pizza", ar: 2000, db: 1 },
+    { id: 2, nev: "Bolognai pizza", ar: 2100, db: 1 },
+    { id: 3, nev: "Fokhagymás pizza", ar: 2100, db: 1 },
+    { id: 4, nev: "Hawaii pizza", ar: 2150, db: 1 },
+    { id: 5, nev: "Tonhalas pizza", ar: 2150, db: 1 },
+    { id: 6, nev: "Vegetáriánus pizza", ar: 2200, db: 1 },
+    { id: 7, nev: "Chillis pizza", ar: 2150, db: 1 },
+    { id: 8, nev: "Jalapeno pizza - extra csípős", ar: 2300, db: 1 }
 ];
 
+let kosar = [];
+
+function kosarba(id) {
+    kosar.push(Number(id));
+}
+
+function rendeles() {
+    const parameterek = new URLSearchParams({
+        kosar: JSON.stringify(kosar)
+    });
+
+    window.location.href = `kosar.html?${parameterek.toString()}`;
+}
 
 const kuponok = [
     {
@@ -243,6 +234,8 @@ function kuponBevaltasa() {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+    if (!document.getElementById("kosarCont")) return;
+
     displayKosar();
     document.getElementById("kuponForm").addEventListener("submit", (event) => {
         event.preventDefault();

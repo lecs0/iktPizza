@@ -3,10 +3,79 @@ body{
 }
 
 h1{
-    font-family:'Copperplate Gothic Light';
+    color: #3a2415;
+    font-family: "Lora", Georgia, serif;
     text-align: center;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: clamp(36px, 5vw, 50px);
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+}
+
+.menu-header {
+  min-height: 116px;
+  padding: 18px 30px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.menu-header h1 {
+  grid-column: 2;
+}
+
+.kosar-gomb {
+  margin-right: 40px;
+  grid-column: 3;
+  justify-self: end;
+  align-self: center;
+  min-width: 170px;
+  margin: 0;
+  padding: 13px 24px;
+  border: 1px solid #e27600;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff9f1c, #f47b00);
+  box-shadow: 0 6px 14px rgba(181, 91, 0, 0.22);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.kosar-gomb:hover {
+  border-color: #c96100;
+  box-shadow: 0 9px 18px rgba(181, 91, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.kosar-gomb:active {
+  box-shadow: 0 3px 8px rgba(181, 91, 0, 0.2);
+  transform: translateY(0);
+}
+
+.kosar-gomb:focus-visible {
+  outline: 3px solid rgba(255, 138, 0, 0.4);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .menu-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .menu-header h1,
+  .kosar-gomb {
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .kosar-gomb {
+    position: static;
+  }
 }
 
 .container-fluid > .row {
